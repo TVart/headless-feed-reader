@@ -5,7 +5,7 @@ install-back: Makefile
 	git clone https://github.com/TVart/feed-reader-api.git api
 	cd api && ./vendor/bin/sail up
 
-install-front: back-end
+install-front: api
 	git clone https://github.com/TVart/feed-reader-app.git front
 
 test: tests
