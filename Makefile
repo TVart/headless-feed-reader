@@ -10,7 +10,4 @@ run-api: api
 	cd api && ./vendor/bin/sail up
 
 run-app: front
-	cd front && npm run serve
-
-test: tests
-	$(PHP) php vendor/phpunit/phpunit/phpunit --configuration phpunit.xml
+	cd front && npm i &&  ionic serve
